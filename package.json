@@ -1,0 +1,12 @@
+{
+  "name": "landinpage",
+  "source": "src/index.html",
+  "browserslist": "> 0.3%, last 3 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  }
+}
