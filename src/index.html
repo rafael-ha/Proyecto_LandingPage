@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/7cbcbc8d34.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.scss">
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
+    <header>
+        <section class="section_header">
+            <a href="#"><img class="img-logo" src="img/Imagotipo.png" alt="Logo"></a>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="navbar-list">
+                <ul>
+                    <li><a href="#mapa">Mapa</a></li>
+                    <li><a href="#personajes">Personajes</a></li>
+                </ul>
+            </nav>
+
+        </section>
+        <nav class="navbar-phone">
+            <ul>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="mainsection mainsection--video">
+            <section class="sectiontexto">
+                <section class="sectionoverlay">
+                    <h3>Bienvenidos a</h3>
+                    <h1>VallaX</h1>
+                </section>
+                <video src="media/Video-videojuego.webm" autoplay muted loop preload="auto"></video>
+            </section>
+        </section>
+
+        <section class="mainsection mainsection--carrusel" id="mapa">
+            <div class="contenedor">
+                <h2>Mapas</h2>
+                <div class="contenedor-carrusel">
+                    <div class="carrusel">
+                        <img src="img/escenarioPrepueblo.png" alt="Primer escenario.">
+                        <img src="img/escenarioPueblo.png" alt="Segundo escenario.">
+                        <img src="img/escenarioBoss.png" alt="Tercer escenario.">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mainsection mainsection--acordeon" id="personajes">
+            <div class="acordeon">
+                <h2>Personajes</h2>
+                <div class="bloque">
+                    <h3 class="h3">Boss</h3>
+                    <div class="contenido">
+                        <audio id="audioboss" src="media/Voz demonio 1.ogg" preload="auto"></audio>
+                        <a href="" class="play"><img src="img/Boss.svg" alt="Imagen boss" id="boss"></a>
+                        <section class="texto">
+                            <h3>Este es VallaX.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium dolores ex
+                                odit. Cumque mollitia eum repudiandae. Incidunt veritatis, aperiam nesciunt eos laborum
+                                hic veniam, placeat ea tempore laboriosam quibusdam.</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="bloque">
+                    <h3 class="h3">Humano</h3>
+                    <div class="contenido">
+                        <audio id="audiohumano" src="media/Voz humano 1.ogg" preload="auto"></audio>
+                        <a href="#" class="play"><img src="img/Humano.svg" alt="Imagen humano" id="humano"></a>
+                        <section class="texto">
+                            <h3>Este es el humano que derrotara a Vallax y salvara el pueblo.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium dolores ex
+                                odit. Cumque mollitia eum repudiandae. Incidunt veritatis, aperiam nesciunt eos laborum
+                                hic veniam, placeat ea tempore laboriosam quibusdam.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
